@@ -6,7 +6,12 @@
 
     <!-- Path publisher -->
     <node name="gps_path_pub" pkg="gps_path_pub" type="gps_path_pub" output="screen">
-        <remap from="/mti0/sensor/fix_navsat" to="/mti0/sensor/fix_navsat" />
+
+        <param name="save_file" type="bool"   value="true" />
+        <param name="file_path" type="str"    value="/home/patrick/workspace/catkin_ws_init/src/open_vins/ov_data/rpng_ironsides/neighborhood_02.txt" />
+
+        <remap from="/mti0/sensor/fix_navsat" to="/reach02/tcpfix" />
+
     </node>
 
 </launch>

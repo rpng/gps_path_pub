@@ -16,7 +16,6 @@ find_package(catkin REQUIRED COMPONENTS roscpp nav_msgs std_msgs sensor_msgs nav
 
 # Describe catkin Project
 catkin_package(
-        DEPENDS Eigen3 Boost
         CATKIN_DEPENDS roscpp nav_msgs std_msgs sensor_msgs nav_msgs tf
         INCLUDE_DIRS src
 )
